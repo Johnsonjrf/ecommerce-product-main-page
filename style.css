@@ -60,6 +60,10 @@
     font: inherit;
 }
 
+p{
+    line-height: 1.5;
+}
+
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
 ul[role='list'],
 ol[role='list'] {
@@ -70,6 +74,8 @@ ol[role='list'] {
 html:focus-within {
   scroll-behavior: smooth;
 }
+
+
 
 /* Set core body defaults */
 
@@ -374,6 +380,10 @@ section{
     text-align: justify;
 }
 
+h1.fw-bold.fs-lg{
+    font-size: 3rem;
+}
+
 .main-img img{
     display: none;
 }
@@ -585,6 +595,10 @@ button:nth-child(odd){
         /* position: relative; */
 
         
+    }
+
+    h1.fw-bold.fs-lg{
+        font-size: 2.5rem;
     }
 
     .main-img img{
