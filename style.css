@@ -640,8 +640,8 @@ button:nth-child(odd){
         position: absolute;
         /* width: 50px; */
         top: 35%;
-        left: 45%;
-        transform: translateX(-55%);
+        left: 40%;
+        transform: translateX(-40%);
         transform: translateY(-40%);
         z-index: 50;
         display: flex;
