@@ -669,6 +669,10 @@ button:nth-child(odd){
         background: var(--Pale-orange);
     }
 
+    .left-column p.fs-es{
+        width: 100%;
+    }
+
     
     
 }
