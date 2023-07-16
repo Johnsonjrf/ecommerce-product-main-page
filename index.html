@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | E-commerce product page</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <!-- <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style> -->
+</head>
+<body>
+
+  <header>
+    <div class="header-container">
+      <div class="logo-nav">
+        <div class="hamburger-logo">
+          <img class="menu" src="images/icon-menu.svg" alt="">
+          <a href="#"><img src="images/logo.svg" alt="logo"></a>
+        </div>
+        
+        <nav class="nav-list">
+          <img class="close" src="/images/icon-close.svg" alt="">
+          <ul role="list">
+            <li><a href="#">Collections</a></li>
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      
+      <div class="profile-img">
+        <img class="cart-icon" src="images/icon-cart.svg" alt="">
+        <img src="images/image-avatar.png" alt="">
+      </div>
+    </div>
+  </header>
+
+  <div class="item-ordered">
+    <div class="title">Cart</div>
+    <div class="order-details">
+      <img class="order-img" src="" alt="">
+      <div class="summary">
+        <p class="order-disc"></p>
+        <span class="total-price"></span>
+      </div>
+      <i id="delete" class=''></i>
+      <!-- <img class="delete-img" src="images/icon-delete.svg" alt=""> -->
+    </div>
+  </div>
+
+  <div class="indicator">
+    <span class="ctrl"></span>
+    <span class="ctrl"></span>
+    <span class="ctrl"></span>
+    <span class="ctrl"></span>
+  </div>
+
+  <main>
+    <section>
+      <div class="container">
+        <div class="right-column">
+          
+          <div class="main-img">
+            
+            <div class="carousel-row">
+              
+              <div class="col">
+                <img src="images/image-product-1.jpg" alt="">
+                
+              </div>
+              <div class="col">
+                <img src="images/image-product-2.jpg" alt="">
+              </div>
+              <div class="col">
+                <img src="images/image-product-3.jpg" alt="">
+              </div>
+              <div class="col">
+                <img src="images/image-product-4.jpg" alt="">
+              </div>
+              
+              
+            </div>
+            
+          </div>
+          <div class="different-views">
+            <div class="mainview">
+              <img class="view" src="images/image-product-1.jpg" alt="">
+            </div>
+            <div class="mainview">
+              <img class="view" src="images/image-product-2.jpg" alt="">
+            </div>
+            <div class="mainview">
+              <img class="view" src="images/image-product-3.jpg" alt="">
+            </div>
+            <div class="mainview">
+              <img class="view" src="images/image-product-4.jpg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="left-column">
+          <h6 class="fw-light fs-es">SNEAKER COMPANY</h6>
+
+          <h1 class="fw-bold fs-lg">Fall Limited Edition</h1>
+
+          <p class="fs-es">These low-profile sneakers are your perfect casual wear companion. Featuring a 
+            durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+
+          <div>
+            <p class="price"><span class="fw-bold fs-light">$125.00</span><small class="discount fs-es">50%</small></p>
+            <small class="fs-es disc">$250</small>
+          </div>
+          
+          <div class="booking">
+            <div class="quantity">
+              <button id="1">-</button>
+              <button id="order">1</button>
+              <button id="3">+</button>
+            </div>
+            <a class="add-to-cart"><img src="images/icon-cart.svg" alt=""> Add to cart</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Collections
+  Men
+  Women
+  About
+  Contact
+
+  Sneaker Company
+
+  Fall Limited Edition Sneakers
+
+  These low-profile sneakers are your perfect casual wear companion. Featuring a 
+  durable rubber outer sole, they’ll withstand everything the weather can offer.
+
+  $125.00
+  50%
+  $250.00
+
+  0
+  Add to cart
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
