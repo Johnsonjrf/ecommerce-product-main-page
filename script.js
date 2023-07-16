@@ -143,7 +143,7 @@ carouselBtns[3].addEventListener("click", () => {
     carouselBtns.forEach((btn) => {
         btn.classList.remove("active")
     })
-    carousel.style.transform = "translateX(-75%)"
+    carousel.style.transform = "translateX(-70%)"
     carouselBtns[3].classList.add("active")
 })
 
