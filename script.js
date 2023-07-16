@@ -62,6 +62,7 @@ const cartDetails = document.querySelector(".item-ordered")
 
 document.querySelector(".cart-icon").addEventListener("click", () => {
     cartDetails.classList.toggle("show")
+    
 })
 
 // click the add to cart button
@@ -114,19 +115,36 @@ const carouselBtns = document.querySelectorAll(".ctrl")
 const carousel = document.querySelector(".carousel-row");
 
 carouselBtns[0].addEventListener("click", () => {
+    carouselBtns.forEach((btn) => {
+        btn.classList.remove("active")
+    })
     carousel.style.transform = "translateX(0px)"
+    carouselBtns[0].classList.add("active")
 })
 
 carouselBtns[1].addEventListener("click", () => {
+    carouselBtns.forEach((btn) => {
+        btn.classList.remove("active")
+    })
     carousel.style.transform = "translateX(-25%)"
+    carouselBtns[1].classList.add("active")
 })
 
 carouselBtns[2].addEventListener("click", () => {
+    carouselBtns.forEach((btn) => {
+        btn.classList.remove("active")
+    })
     carousel.style.transform = "translateX(-50%)"
+    carouselBtns[2].classList.add("active")
+    
 })
 
 carouselBtns[3].addEventListener("click", () => {
+    carouselBtns.forEach((btn) => {
+        btn.classList.remove("active")
+    })
     carousel.style.transform = "translateX(-75%)"
+    carouselBtns[3].classList.add("active")
 })
 
 

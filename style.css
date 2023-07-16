@@ -221,6 +221,7 @@ nav ul li a:hover::after{
     border-radius: 10px;
     /* display: flex; */
     flex-direction: column;
+    z-index: 1000;
 }
 
 .item-ordered.show{
@@ -485,6 +486,15 @@ button:nth-child(odd){
 
     }
 
+    .item-ordered{
+        z-index: 10000000;
+    }
+
+    main{
+        position: relative;
+        z-index: -1000;
+    }
+
     nav.show-menu{
         left: 0;
     }
@@ -533,6 +543,8 @@ button:nth-child(odd){
         gap: 0;
         padding: 0;
         overflow-x: hidden;
+        position: relative;
+        z-index: -100;
         /* margin-top: 10rem; */
     }
 
@@ -557,6 +569,7 @@ button:nth-child(odd){
         position: relative;
         overflow: hidden;
         box-sizing: border-box;
+        z-index: -1000;
     }
     
     .main-img{
@@ -638,9 +651,10 @@ button:nth-child(odd){
     .indicator{
         position: absolute;
         /* width: 50px; */
-        top: 50%;
+        top: 45%;
         left: 50%;
         transform: translateX(-50%);
+        transform: translateY(-45%);
         z-index: 10;
         display: flex;
     }
@@ -653,7 +667,12 @@ button:nth-child(odd){
         border-radius: 50%;
         /* background: red; */
         margin-right: 10px;
+        /* background: var(--Pale-orange); */
         
+    }
+
+    .active{
+        background: var(--Pale-orange);
     }
 
     
