@@ -639,9 +639,10 @@ button:nth-child(odd){
     .indicator{
         position: absolute;
         /* width: 50px; */
-        top: 50%;
+        top: 40%;
         left: 50%;
         transform: translateX(-50%);
+        transform: translateY(-40%);
         z-index: 10;
         display: flex;
     }
@@ -661,6 +662,10 @@ button:nth-child(odd){
         width: 90%;
         left: 5%;
         height: 200px;
+    }
+
+    .active{
+        background: var(--Pale-orange);
     }
 
     
