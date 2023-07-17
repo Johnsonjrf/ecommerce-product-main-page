@@ -84,6 +84,12 @@ orderButton.addEventListener("click", () => {
         orderDetails.style.display = "flex"
     }
 
+    
+
+    updateCartList();
+    document.querySelector(".cart-contents-number").style.display = "inline-flex"
+    
+
 
 });
 
@@ -94,6 +100,8 @@ function updatePrice (qty) {
 // delete item from cart
 deleteIcon.addEventListener("click", () => {
     orderDetails.style.display = "none"
+    document.querySelector(".cart-contents-number").style.display = "none"
+    listCounter = 0
 })
 
 // toggle menu bar
@@ -146,6 +154,18 @@ carouselBtns[3].addEventListener("click", () => {
     carousel.style.transform = "translateX(-70%)"
     carouselBtns[3].classList.add("active")
 })
+
+
+// updating the cart number
+let listCounter = 0;
+const cartItemCounter = document.querySelector(".cart-contents-number")
+function updateCartList () {
+    listCounter++;
+    cartItemCounter.innerHTML = listCounter
+
+}
+
+
 
 
 // document.body.addEventListener("click", () => {

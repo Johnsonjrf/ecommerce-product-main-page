@@ -213,6 +213,24 @@ nav ul li a:hover::after{
     cursor: pointer;
 }
 
+.cart-number{
+    position: relative;
+}
+
+.cart-contents-number{
+    position: absolute;
+    padding: .1rem .2rem;
+    background: red;
+    color: #fff;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 8px;
+}
+
 .item-ordered{
     display: none;
     position: absolute;
@@ -220,7 +238,7 @@ nav ul li a:hover::after{
     top: 10%;
     max-width: 330px;
     width: 250px;
-    height: 150px;
+    height: 160px;
     border: none;
     box-shadow: 0 0 10px #ccc;
     background: #fff;
@@ -250,10 +268,50 @@ nav ul li a:hover::after{
     width: 100%;
     height: 70%;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: .2rem;
+}
+
+.sub-order{
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+    flex: 1;
+}
+
+.check-btn{
+    flex: 1;
+    width: 100%;
+    display: flex;
     align-items: center;
     justify-content: center;
-    gap: .7rem;
 }
+
+a.checkout{
+    /* display: inline-block; */
+    width: 60%;
+    padding: .3rem .1rem;
+    margin: auto;
+    background: var(--Orange);
+    color: #fff;
+    font-size: .8rem;
+    border-radius: 7px;
+    cursor: pointer;
+    text-align: center;
+    /* flex: 1; */
+}
+
+button.checkout:hover{
+    opacity: 0.75;
+}
+
+
 
 .order-details img{
     width: 40px;
@@ -352,6 +410,19 @@ section{
     height: 100%;
     border-radius: 10px;
     cursor: pointer;
+}
+
+.mainview:hover{
+    opacity: 0.75;
+    border: 5px solid --Orange;
+}
+
+.mainview img:hover{
+    outline: 3px solid var(--Orange);
+}
+
+.mainview:focus{
+    border: 1px solid var(--Orange);
 }
 
 .view{
@@ -490,7 +561,7 @@ button:nth-child(odd){
         /* align-items: center; */
         padding-left: 1.5rem;
         padding-top: 1.5rem;
-        z-index: 10;
+        z-index: 10000;
         background: var(--Pale-orange);
         transition: all 1s ease-in-out;
 
